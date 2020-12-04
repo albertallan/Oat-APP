@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title class="titulopagina">
+      Enviar Opinião
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form (ngSubmit)="adicionar()" >
+    <ion-item>
+      <ion-label position="floating">Email</ion-label>
+      <ion-input  type="text" [(ngModel)]="opiniao.email" name="titulo"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Nome</ion-label>
+      <ion-input  type="text" [(ngModel)]="opiniao.nome" name="nome"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Assunto</ion-label>
+      <ion-input  type="text" [(ngModel)]="opiniao.assunto" name="assunto"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Mensagem</ion-label>
+      <ion-input type="text"[(ngModel)]="opiniao.mensagem" name="descricao"></ion-input>
+    </ion-item>
+    <ion-button color="success"ion-button type="submit"expand="block">Enviar Opiniao</ion-button>
+    <ion-button color="danger"expand="block"(click)="cancelar()">
+      <ion-icon slot="start"name="close"></ion-icon>
+      Cancelar
+      <ion-icon slot="end"name="close"></ion-icon>
+    </ion-button>
+  </form>
+</ion-content>

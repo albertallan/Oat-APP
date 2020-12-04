@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title class="titulopagina">
+      Atualizar Feed
+    </ion-title>
+    
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form (ngSubmit)="adicionar()" >
+    <ion-item>
+      <ion-label position="floating">Titulo</ion-label>
+      <ion-input  type="text" [(ngModel)]="informacao.titulo" name="titulo"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input class="btn-arquivo"type="file" name="imagem" (change)="fileChangeLinstener($event)"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Descrição</ion-label>
+      <ion-input type="text"[(ngModel)]="informacao.descricao" name="descricao"></ion-input>
+    </ion-item>
+    <ion-button color="success"ion-button type="submit"expand="block">Realizar Cadastro</ion-button>
+
+    <ion-button color="danger"expand="block"(click)="cancelar()">
+      <ion-icon slot="start"name="close"></ion-icon>
+      Cancelar
+      <ion-icon slot="end"name="close"></ion-icon>
+    </ion-button>
+  </form>
+</ion-content>

@@ -1,0 +1,33 @@
+#texto_inicial{
+    margin-top:10%;
+    font-size: 15px;
+    
+}
+
+#foto_inicial {
+    margin-top:20px;
+    width: 100%;
+    height: 65%;
+    border-radius: 10%;
+    align-items: center;
+    text-align: center;
+    
+    
+}
+#texto_inicial2{
+    margin-top:-15%;
+    font-size: 15px;
+    height: 20%;
+    text-align: center;
+    
+}
+.titulopagina{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    background: rgb(77,0,0);
+    background: linear-gradient(0deg, rgba(77,0,0,1) 15%, rgba(235,21,21,1) 49%, rgba(77,0,0,1) 87%);
+    color:rgb(255, 255, 255);
+    padding:16px;   
+    font-weight: bold;
+}

@@ -1,0 +1,30 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title class='titulopagina'>
+      Mundo Geek
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Mundo Geek</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-item id="texto_inicial">
+    <ion-icon slot="start" name="rocket-outline"></ion-icon>
+    <ion-icon slot="end" name="game-controller-outline"></ion-icon>
+    <ion-label>"Todos somos Geek"</ion-label>
+  </ion-item>
+  <div id='foto_inicial'>
+    
+    <img id="foto_inicial" slot="center" src='./assets/imagem/mundo_geek.png'>
+  </div>
+  
+  <ion-item id="texto_inicial2">
+    <ion-icon slot="start" name="rocket-outline"></ion-icon>
+    <ion-icon slot="end" name="game-controller-outline"></ion-icon>
+    <ion-label>Portal para <br>incentivadores da <br>cultura Geek</ion-label>
+  </ion-item>
+</ion-content>
